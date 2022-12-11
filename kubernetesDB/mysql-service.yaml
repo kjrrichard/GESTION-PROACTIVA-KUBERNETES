@@ -9,9 +9,9 @@ metadata:
     io.kompose.service: mysql
   name: mysql
 spec:
-  type: loadBalancer
+  type: LoadBalancer
   ports:
-    - name: "3306"
+    - name: "http"
       port: 3306
       targetPort: 3306
   selector:

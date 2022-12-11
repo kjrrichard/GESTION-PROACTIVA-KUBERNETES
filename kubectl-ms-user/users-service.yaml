@@ -9,10 +9,9 @@ metadata:
     io.kompose.service: users
   name: users
 spec:
-  type: loadBalancer
+  type: LoadBalancer
   ports:
-    - name: "http"
-      port: 3002
+    - port: 3002
       targetPort: 3002
   selector:
     io.kompose.service: users
